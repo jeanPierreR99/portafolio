@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Document</title>
 
@@ -16,6 +19,21 @@
         margin: 0;
       }
       body {
+        background: #041c36;
+      }
+      header {
+        height: 100px;
+      }
+      .add-header {
+        box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.244);
+        background: #041c36;
+      }
+      .sociales li:hover {
+        background: linear-gradient(rgb(255, 0, 98), rgb(246, 163, 163));
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      .section-header {
         background: rgb(3, 34, 70);
         background: linear-gradient(
           90deg,
@@ -23,124 +41,183 @@
           rgba(4, 11, 19, 1) 100%
         );
       }
-
-      /* .content-body {
-        height: calc(100vh - 7rem);
-      } */
-      header {
-        height: 100px;
-        
-        
+      .es{
+        width: 100px;
+        height: 2px;
+        /* background: rgb(255, 255, 255); */
       }
-      .add-header{
-        box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.244);
-        background: #041c36;
+      .es:nth-child(1){
+        right: 60px;
       }
-      img:nth-child(2) {
+      .es:nth-child(2){
+        right: 10px;
+        transform: rotate(90deg);
+        top: 50px;
       }
-      .sociales li:hover{
-  background: linear-gradient(rgb(255, 0, 98),rgb(246, 163, 163));
-  -webkit-background-clip: text;
-  color: transparent
-}
+      .es:nth-child(3){
+        right: 60px;
+        bottom: 170px;
+      }
+      .es:nth-child(4){
+        right: 10px;
+        transform: rotate(90deg);
+        bottom: 220px;
+      }
+      .es:nth-child(5){
+        left: 60px;
+        bottom: 170px;
+      }
+      .es:nth-child(6){
+        left: 10px;
+        transform: rotate(90deg);
+        bottom: 220px;
+      }
+      .es:nth-child(7){
+        left: 60px;
+      }
+      .es:nth-child(8){
+        left: 10px;
+        transform: rotate(90deg);
+        top: 50px;
+      }
     </style>
   </head>
-  <body class="">
-    <div class="section-header sm:h-screen overflow-hidden" >
-      <header id="header"
-        class="sm:flex justify-between sm:pr-10 sm:pl-10 pr-2 h-48 sm:h-28 fixed w-full" style="z-index: 2000;"
+  <body>
+    <div class="section-header md:h-screen overflow-hidden relative">
+      <header
+        id="header"
+        class="md:flex justify-between md:pr-10 md:pl-10 pr-2 h-48 md:h-28 fixed w-full"
+        style="z-index: 2000"
       >
         <img
           src="./img/logo2.png"
           alt=""
-          class="h-26 sm:w-48 sm:h-34 m-auto sm:m-0"
+          class="h-26 md:w-48 md:h-34 m-auto md:m-0"
         />
-        <ul class="flex sm:gap-6 gap-2 self-center justify-center">
+        <ul class="flex md:gap-6 gap-2 self-center justify-center">
           <li class="">
             <a
-              href=""
+              href="#"
               class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed text-gray-400 hover:text-gray-100"
               >HOME</a
             >
           </li>
           <li class="">
             <a
-              href=""
+              href="#"
               class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed text-gray-400 hover:text-gray-100"
               >SOBRE MI</a
             >
           </li>
           <li class="">
             <a
-              href=""
+              href="#"
               class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed text-gray-400 hover:text-gray-100"
               >EXPERIENCIAS</a
             >
           </li>
           <li class="">
             <a
-              href=""
+              href="#"
               class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed text-gray-400 hover:text-gray-100"
               >PROYECTOS</a
             >
           </li>
         </ul>
       </header>
-      <div class="content-body w-full relative   sm:h-full sm:mt-28 mt-48">
-        <div class="left w-full sm:pl-20 sm:pt-20 pl-2 pt-2 flex flex-col gap-10">
+      <div
+        class="content-body w-full relative md:h-full md:mt-28 mt-48 z-10  "
+      >
+        <span class="l1 es absolute"></span>
+        <span class="l2 es absolute"></span>
+        <span class="l3 es absolute"></span>
+        <span class="l4 es absolute"></span>
+        <span class="l5 es absolute"></span>
+        <span class="l6 es absolute"></span>
+        <span class="l7 es absolute"></span>
+        <span class="l8 es absolute"></span>
+        <div
+          class="left w-full md:pl-20 md:pt-20 pl-2 pt-2 flex flex-col gap-10"
+        >
           <div>
-            <h1 class="text-8xl text-white font-bold z-80">I'M <span class="text-rose-700 text-9xl" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">J</span>EAN PIERRE</h1>
+            <h1 class="text-8xl text-white font-bold z-80">
+              I'M
+              <span
+                class="text-rose-700 text-9xl"
+                style="
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                "
+                >J</span
+              >EAN PIERRE
+            </h1>
             <h4 class="text-white tracking-[.25em]">Full stack developer</h4>
           </div>
           <button
-            class="btn btn-success border  py-2 text-white hover:bg-rose-700 w-36 rounded-full"
+            class="btn btn-success border py-2 text-white hover:bg-rose-700 w-36 rounded-full"
             type="button"
           >
             CONTACTAME
           </button>
           <div class="sociales flex gap-4">
-            <li class="list-none text-white text-3xl"><a href=""><i class="bi bi-linkedin"></i></a></li>
-            <li class="list-none text-white text-3xl"><a href=""><i class="bi bi-messenger"></i></a></li>
-            <li class="list-none text-white text-3xl"><a href=""><i class="bi bi-github"></i></a></li>
+            <li class="list-none text-white text-3xl">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li class="list-none text-white text-3xl">
+              <a href="#"><i class="bi bi-messenger"></i></a>
+            </li>
+            <li class="list-none text-white text-3xl">
+              <a href="#"><i class="bi bi-github"></i></a>
+            </li>
           </div>
         </div>
 
         <img
           src="./img/portada4.png"
-          class="w-full sm:h-5/6 absolute h-full sm:w-5/12 sm:right-0   top-0 right-[-60px]"
-          style="z-index:-1"
+          class="md:h-5/6 absolute h-full md:w-5/12 md:right-0 top-0 right-[-40px]"
+          style="z-index: -10"
           alt=""
         />
       </div>
+      <svg
+        style="position: absolute; left: 0; bottom: 0"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#041c36"
+          fill-opacity="1"
+          d="M0,192L24,202.7C48,213,96,235,144,208C192,181,240,107,288,101.3C336,96,384,160,432,186.7C480,213,528,203,576,176C624,149,672,107,720,80C768,53,816,43,864,53.3C912,64,960,96,1008,138.7C1056,181,1104,235,1152,218.7C1200,203,1248,117,1296,74.7C1344,32,1392,32,1416,32L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+          data-darkreader-inline-fill=""
+          style="--darkreader-inline-fill: #1e628d"
+        ></path>
+      </svg>
     </div>
-    <div>. </div>
-    <div>. </div>
-    <div>. </div>
-    <div> .</div>
-    <div>. </div>
-    <div>. </div>
-    <div>. </div>
-    <div>. </div>
-    <div> .</div>
-    <div>. </div>
-    <div>. </div>
-    <div>. </div>
-    <div>. </div>
-    <div> .</div>
-    <div>. </div>
+    <div class="h-screen">.</div>
+    <div class="h-screen">.</div>
+    <div class="h-screen">.</div>
+    <div class="h-screen">.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
+    <div>.</div>
 
     <script>
-        $(window).on("scroll", function () {
-    if($(window).scrollTop() == 0){
-      $("#header").removeClass("add-header");
-    }
-    if ($(window).scrollTop() > 0) {
-    $("#header").addClass("add-header");
-
-  
-  }
-
-});
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() == 0) {
+          $("#header").removeClass("add-header");
+        }
+        if ($(window).scrollTop() > 0) {
+          $("#header").addClass("add-header");
+        }
+      });
     </script>
   </body>
 </html>
