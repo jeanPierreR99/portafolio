@@ -29,9 +29,7 @@
         background: #041c36;
       }
       .sociales li:hover {
-        background: linear-gradient(rgb(255, 0, 98), rgb(246, 163, 163));
-        -webkit-background-clip: text;
-        color: transparent;
+        background: linear-gradient(rgb(210, 1, 78), rgb(247, 238, 69));
       }
       .section-header {
         background: rgb(3, 34, 70);
@@ -41,49 +39,93 @@
           rgba(4, 11, 19, 1) 100%
         );
       }
-      .es{
+      .es {
         width: 100px;
         height: 2px;
         /* background: rgb(255, 255, 255); */
       }
-      .es:nth-child(1){
+      .es:nth-child(1) {
         right: 60px;
       }
-      .es:nth-child(2){
+      .es:nth-child(2) {
         right: 10px;
         transform: rotate(90deg);
         top: 50px;
       }
-      .es:nth-child(3){
+      .es:nth-child(3) {
         right: 60px;
         bottom: 170px;
       }
-      .es:nth-child(4){
+      .es:nth-child(4) {
         right: 10px;
         transform: rotate(90deg);
         bottom: 220px;
       }
-      .es:nth-child(5){
+      .es:nth-child(5) {
         left: 60px;
         bottom: 170px;
       }
-      .es:nth-child(6){
+      .es:nth-child(6) {
         left: 10px;
         transform: rotate(90deg);
         bottom: 220px;
       }
-      .es:nth-child(7){
+      .es:nth-child(7) {
         left: 60px;
       }
-      .es:nth-child(8){
+      .es:nth-child(8) {
         left: 10px;
         transform: rotate(90deg);
         top: 50px;
+      }
+      .num {
+        color: transparent;
+        font-family: fantasy;
+        -webkit-text-stroke: #ffffff47 1px;
+      }
+      #linkedin:hover:after {
+        content: "LINKEDIN";
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-size: 1.5rem;
+        bottom: -30px;
+        left: -40px;
+        background: rgb(210, 1, 78);
+        border-radius: 20px;
+        padding: 3px 10px 3px 10px;
+      }
+      #messenger:hover::after {
+        content: "MESSENGER";
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-size: 1.5rem;
+        bottom: -30px;
+        left: -60px;
+        background: rgb(210, 1, 78);
+        border-radius: 20px;
+        padding: 3px 10px 3px 10px;
+      }
+      #git-hub:hover::after {
+        content: "GIT HUB";
+        position: absolute;
+        width: auto;
+        height: auto;
+        font-size: 1.5rem;
+        bottom: -30px;
+        left: -20px;
+        background: rgb(210, 1, 78);
+        border-radius: 20px;
+        padding: 3px 10px 3px 10px;
       }
     </style>
   </head>
   <body>
-    <div class="section-header md:h-screen overflow-hidden relative">
+    <div
+      class="section-header md:h-screen overflow-hidden relative"
+      id="section-1"
+    >
       <header
         id="header"
         class="md:flex justify-between md:pr-10 md:pl-10 pr-2 h-48 md:h-28 fixed w-full"
@@ -97,37 +139,35 @@
         <ul class="flex md:gap-6 gap-2 self-center justify-center">
           <li class="">
             <a
-              href="#"
-              class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed text-gray-400 hover:text-gray-100"
+              onclick="saltarA()"
+              class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed focus:text-rose-700 text-gray-400 hover:text-gray-100 cursor-pointer"
               >HOME</a
             >
           </li>
           <li class="">
             <a
-              href="#"
-              class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed text-gray-400 hover:text-gray-100"
+              onclick="saltarB()"
+              class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed focus:text-rose-700 text-gray-400 hover:text-gray-100 cursor-pointer"
               >SOBRE MI</a
             >
           </li>
           <li class="">
             <a
-              href="#"
-              class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed text-gray-400 hover:text-gray-100"
+              onclick="saltarC()"
+              class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed focus:text-rose-700 text-gray-400 hover:text-gray-100 cursor-pointer"
               >EXPERIENCIAS</a
             >
           </li>
           <li class="">
             <a
-              href="#"
-              class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed text-gray-400 hover:text-gray-100"
+              onclick="saltarD()"
+              class="border-gray-100 text-xs ease-in duration-200 p-2 hover:border-b-2 border-dashed focus:text-rose-700 text-gray-400 hover:text-gray-100 cursor-pointer"
               >PROYECTOS</a
             >
           </li>
         </ul>
       </header>
-      <div
-        class="content-body w-full relative md:h-full md:mt-28 mt-48 z-10  "
-      >
+      <div class="content-body w-full relative md:h-full md:mt-28 mt-48 z-10">
         <span class="l1 es absolute"></span>
         <span class="l2 es absolute"></span>
         <span class="l3 es absolute"></span>
@@ -137,13 +177,13 @@
         <span class="l7 es absolute"></span>
         <span class="l8 es absolute"></span>
         <div
-          class="left w-full md:pl-20 md:pt-20 pl-2 pt-2 flex flex-col gap-10"
+          class="left w-full md:pl-10 md:pt-10 pl-2 pt-2 flex flex-col gap-10"
         >
           <div>
-            <h1 class="text-8xl text-white font-bold z-80">
+            <h1 class="md:text-9xl text-8xl text-white font-bold z-80">
               I'M
               <span
-                class="text-rose-700 text-9xl"
+                class="text-rose-700 md:text-[11rem] text-9xl"
                 style="
                   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
                     sans-serif;
@@ -151,30 +191,38 @@
                 >J</span
               >EAN PIERRE
             </h1>
-            <h4 class="text-white tracking-[.25em]">Full stack developer</h4>
+            <h4 class="text-white tracking-[.25em] text-1xl md:text-2xl">
+              Full stack developer
+            </h4>
           </div>
           <button
-            class="btn btn-success border py-2 text-white hover:bg-rose-700 w-36 rounded-full"
+            class="btn btn-success border py-3 px-5 text-white hover:bg-rose-700 w-fit text-2xl md:text-3xl rounded-full duration-300 ease-in hover:border-rose-700"
             type="button"
           >
             CONTACTAME
           </button>
           <div class="sociales flex gap-4">
-            <li class="list-none text-white text-3xl">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+            <li class="list-none text-white text-5xl">
+              <a href="#" id="linkedin" class="relative"
+                ><i class="bi bi-linkedin"></i
+              ></a>
             </li>
-            <li class="list-none text-white text-3xl">
-              <a href="#"><i class="bi bi-messenger"></i></a>
+            <li class="list-none text-white text-5xl">
+              <a href="#" id="messenger" class="relative"
+                ><i class="bi bi-messenger"></i
+              ></a>
             </li>
-            <li class="list-none text-white text-3xl">
-              <a href="#"><i class="bi bi-github"></i></a>
+            <li class="list-none text-white text-5xl">
+              <a href="#" id="git-hub" class="relative"
+                ><i class="bi bi-github"></i
+              ></a>
             </li>
           </div>
         </div>
 
         <img
           src="./img/portada4.png"
-          class="md:h-5/6 absolute h-full md:w-5/12 md:right-0 top-0 right-[-40px]"
+          class="md:h-6/6 absolute h-full md:w-6/12 md:right-0 top-0 right-[-40px]"
           style="z-index: -10"
           alt=""
         />
@@ -183,6 +231,7 @@
         style="position: absolute; left: 0; bottom: 0"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
+        class="relative"
       >
         <path
           fill="#041c36"
@@ -191,24 +240,67 @@
           data-darkreader-inline-fill=""
           style="--darkreader-inline-fill: #041c36"
         ></path>
+        <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">01</h1>
       </svg>
     </div>
-    <div class="h-screen">.</div>
-    <div class="h-screen">.</div>
-    <div class="h-screen">.</div>
-    <div class="h-screen">.</div>
-    <div>.</div>
-    <div>.</div>
-    <div>.</div>
-    <div>.</div>
-    <div>.</div>
-    <div>.</div>
-    <div>.</div>
-    <div>.</div>
-    <div>.</div>
-    <div>.</div>
-    <div>.</div>
-
+    <div class="h-[calc(100vh-110px)] relative" id="section-2">
+      <h1 class="text-9xl text-white">page2</h1>
+      <svg
+        style="position: absolute; left: 0; bottom: 0"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="relative"
+      >
+        <path
+          fill="rgb(3, 22, 37)"
+          fill-opacity="1"
+          d="M0,192L24,202.7C48,213,96,235,144,208C192,181,240,107,288,101.3C336,96,384,160,432,186.7C480,213,528,203,576,176C624,149,672,107,720,80C768,53,816,43,864,53.3C912,64,960,96,1008,138.7C1056,181,1104,235,1152,218.7C1200,203,1248,117,1296,74.7C1344,32,1392,32,1416,32L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+          data-darkreader-inline-fill=""
+          style="--darkreader-inline-fill: #041c36"
+        ></path>
+        <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">02</h1>
+      </svg>
+    </div>
+    <div
+      class="h-[calc(100vh-110px)] relative"
+      id="section-3"
+      style="background: rgb(3, 22, 37)"
+    >
+      <h1 class="text-9xl text-white">page3</h1>
+      <svg
+        style="position: absolute; left: 0; bottom: 0"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="relative"
+      >
+        <path
+          fill="#041c36"
+          fill-opacity="1"
+          d="M0,192L24,202.7C48,213,96,235,144,208C192,181,240,107,288,101.3C336,96,384,160,432,186.7C480,213,528,203,576,176C624,149,672,107,720,80C768,53,816,43,864,53.3C912,64,960,96,1008,138.7C1056,181,1104,235,1152,218.7C1200,203,1248,117,1296,74.7C1344,32,1392,32,1416,32L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+          data-darkreader-inline-fill=""
+          style="--darkreader-inline-fill: #041c36"
+        ></path>
+        <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">03</h1>
+      </svg>
+    </div>
+    <div class="h-[calc(100vh-110px)] relative" id="section-4" style="">
+      <h1 class="text-9xl text-white">page4</h1>
+      <svg
+        style="position: absolute; left: 0; bottom: 0"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="relative"
+      >
+        <path
+          fill="rgb(3, 22, 37)"
+          fill-opacity="1"
+          d="M0,192L24,202.7C48,213,96,235,144,208C192,181,240,107,288,101.3C336,96,384,160,432,186.7C480,213,528,203,576,176C624,149,672,107,720,80C768,53,816,43,864,53.3C912,64,960,96,1008,138.7C1056,181,1104,235,1152,218.7C1200,203,1248,117,1296,74.7C1344,32,1392,32,1416,32L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+          data-darkreader-inline-fill=""
+          style="--darkreader-inline-fill: #041c36"
+        ></path>
+        <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">04</h1>
+      </svg>
+    </div>
     <script>
       $(window).on("scroll", function () {
         if ($(window).scrollTop() == 0) {
@@ -218,6 +310,34 @@
           $("#header").addClass("add-header");
         }
       });
+      function saltarA() {
+        var tiempo = 700;
+        $("html, body").animate(
+          { scrollTop: $("#section-1").offset().top - 150 },
+          tiempo
+        );
+      }
+      function saltarB() {
+        var tiempo = 700;
+        $("html, body").animate(
+          { scrollTop: $("#section-2").offset().top - 110 },
+          tiempo
+        );
+      }
+      function saltarC() {
+        var tiempo = 700;
+        $("html, body").animate(
+          { scrollTop: $("#section-3").offset().top - 110 },
+          tiempo
+        );
+      }
+      function saltarD() {
+        var tiempo = 700;
+        $("html, body").animate(
+          { scrollTop: $("#section-4").offset().top - 110 },
+          tiempo
+        );
+      }
     </script>
   </body>
 </html>
