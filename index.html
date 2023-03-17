@@ -29,8 +29,8 @@
         background: #041c36;
       }
       .sociales li:hover {
-      color: rgb(237, 20, 85);
-        transition: .7s;
+        color: rgb(237, 20, 85);
+        transition: 0.7s;
       }
       .section-header {
         background: rgb(3, 34, 70);
@@ -82,29 +82,59 @@
       .num {
         color: transparent;
         font-family: fantasy;
-        -webkit-text-stroke: #ffffff22 1px;
+        -webkit-text-stroke: #969191a7 1px;
+        bottom: 100px !important;
       }
-    
-      .wavy{
-        z-index: 9999 !important;
-      }
-      .profile{
+      .profile {
         filter: grayscale(1);
       }
-      #section-2{
-        z-index: 10;
-        background: #041c36;
+      #section-1 {
+        /* clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%); */
+        background: none;
       }
-      #section-4{
+      #section-2 {
         z-index: 10;
-        background: #041c36;
+        background: rgb(225, 227, 233);
       }
-      #section-3{
+      #section-2::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background: rgb(225, 227, 233);
+        top: -90px;
+        clip-path: polygon(0 0, 100% 70%, 100% 100%, 0% 100%);
+      }
+      #section-3::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background: rgb(52, 97, 132);
+        top: -90px;
+        clip-path: polygon(0 70%, 100% 0, 100% 100%, 0% 100%);
+
+        z-index: 9999999 !important;
+      }
+      #section-4 {
         z-index: 10;
-        background: rgb(3, 22, 37);
+        background: #ffffff;
       }
-      .cir{
-        height: calc( 100vh - 10px);
+      #section-4::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background: #ffffff;
+        top: -90px;
+        clip-path: polygon(0 0, 100% 70%, 100% 100%, 0% 100%);
+      }
+      #section-3 {
+        z-index: 10;
+        background: rgb(52, 97, 132);
+      }
+      .cir {
+        height: calc(100vh - 10px);
         width: 500px;
         background: rgb(20, 96, 119);
         position: fixed;
@@ -113,13 +143,27 @@
         border-radius: 50%;
         z-index: -10;
         filter: blur(83px);
-
       }
-      .name{
-  background: linear-gradient(hsl(0, 0%, 100%), #949494) !important;
-  -webkit-background-clip: text !important;
-  color: transparent !important;
+      .name {
+        background: linear-gradient(hsl(0, 0%, 100%), #949494) !important;
+        -webkit-background-clip: text !important;
+        color: transparent !important;
       }
+      .about-text{
+        color: rgb(101, 100, 97);
+      }
+      .capa{
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        background: rgb(249, 239, 186);
+        filter: blur(60px);
+        border-radius: 50%;
+      left: -20px;
+      bottom: 0px;
+      z-index: -1;
+      }
+ 
     </style>
   </head>
   <body>
@@ -178,7 +222,8 @@
         <span class="l7 es absolute"></span>
         <span class="l8 es absolute"></span>
         <div
-          class="left w-full md:pl-10 md:pt-20 pl-2 pt-2 flex flex-col gap-10 fixed" style="z-index: -10;"
+          class="left w-full md:pl-10 md:pt-20 pl-2 pt-2 flex flex-col gap-10 fixed"
+          style="z-index: -10"
         >
           <div>
             <h1 class="md:text-9xl text-8xl text-white font-bold name">
@@ -197,7 +242,7 @@
             </h4>
           </div>
           <button
-            class="btn btn-success border py-3 px-5 text-white hover:bg-rose-700 w-fit text-2xl md:text-3xl rounded-full duration-300 ease-in hover:border-rose-700"
+            class="btn btn-success border py-3 px-5 text-white hover:bg-rose-700 w-fit text-2xl md:text-3xl rounded-md duration-300 ease-in hover:border-rose-700"
             type="button"
           >
             CONTACTAME
@@ -220,84 +265,68 @@
             </li>
           </div>
         </div>
-     <div class="cir sm:block hidden"></div>
+        <div class="cir sm:block hidden"></div>
         <img
           src="./img/profile.png"
           class="profile h-full hidden sm:block hidden fixed w-auto sm:top-[-0px] right-0 md:top-[0px]"
           style="z-index: -1"
           alt=""
         />
-      
       </div>
-      <svg
-      style="position: absolute; left: 0; z-index: 10000;"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-      class="bottom-0"
-    >
-      <path
-        fill="#041c36"
-        fill-opacity="1"
-        d="M0,192L24,202.7C48,213,96,235,144,208C192,181,240,107,288,101.3C336,96,384,160,432,186.7C480,213,528,203,576,176C624,149,672,107,720,80C768,53,816,43,864,53.3C912,64,960,96,1008,138.7C1056,181,1104,235,1152,218.7C1200,203,1248,117,1296,74.7C1344,32,1392,32,1416,32L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
-      class="dark:fill-[#041c36] wavy"
-    
-        ></path>
-    </svg>
     </div>
-    <div class="h-[calc(100vh-110px)] relative" id="section-2">
-      <h1 class="text-9xl text-white">page2</h1>
-      <svg
-        style="position: absolute; left: 0; bottom: 0"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        class="relative"
-      >
-        <path
-          fill="#031625"
-          fill-opacity="1"
-          d="M0,192L24,202.7C48,213,96,235,144,208C192,181,240,107,288,101.3C336,96,384,160,432,186.7C480,213,528,203,576,176C624,149,672,107,720,80C768,53,816,43,864,53.3C912,64,960,96,1008,138.7C1056,181,1104,235,1152,218.7C1200,203,1248,117,1296,74.7C1344,32,1392,32,1416,32L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
-          class="relative dark:fill-[#031625]"
-        ></path>
-        <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">02</h1>
-      </svg>
+    <div class="h-auto pb-0 sm:pb-10 md:pb-0 relative sm:flex-row flex-col flex" id="section-2">
+      <div class="section-2-left h-full w-full sm:w-7/12 px-10">
+        <h4 class="text-5xl font-bold about-text mb-10">Sobre mi</h4>
+        <div>
+          <div class="about-text">
+          <p class="text-2xl mb-5 text-justify">
+            Soy un entusiasta de la web que disfruta de la creación de
+            experiencias digitales atractivas y accesibles para todos.
+          </p>
+          <p class="text-2xl mb-5 text-justify">
+            Apasionado por la creatividad y la tecnología, mi objetivo es
+            utilizar mis habilidades para crear soluciones innovadoras y
+            emocionantes.
+          </p>
+          <p class="text-2xl mb-5 text-justify">
+            Creo que la mejor manera de aprender es a través de la
+            experimentación y la colaboración, y estoy emocionado de seguir
+            creciendo como profesional en el mundo del diseño y desarrollo web.
+          </p>
+        </div>
+          <h4 class="text-2xl mt-10 about-text mb-10 font-bold">Mis redes sociales</h4>
+          <div class="sociales flex gap-4">
+            <li class="list-none about-text text-4xl">
+              <a href="#" id="linkedin" class="relative"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+            <li class="list-none about-text text-4xl">
+              <a href="#" id="messenger" class="relative"
+                ><i class="bi bi-messenger"></i
+              ></a>
+            </li>
+            <li class="list-none about-text text-4xl">
+              <a href="#" id="git-hub" class="relative"
+                ><i class="bi bi-github"></i
+              ></a>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="section-2-right sm:h-full h-[400px] w-full sm:w-5/12 relative">
+        <img src="./img/portada4.png" alt="" class="h-full w-full object-contain">
+   <div class="absolute capa"></div>
+      </div>
+      <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">02</h1>
     </div>
-    <div
-      class="h-[calc(100vh-110px)] relative"
-      id="section-3"
-      style="background: rgb(3, 22, 37)"
-    >
+    <div class="h-screen relative" id="section-3">
       <h1 class="text-9xl text-white">page3</h1>
-      <svg
-        style="position: absolute; left: 0; bottom: 0"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        class="relative"
-      >
-        <path
-          fill="#041c36"
-          fill-opacity="1"
-          d="M0,192L24,202.7C48,213,96,235,144,208C192,181,240,107,288,101.3C336,96,384,160,432,186.7C480,213,528,203,576,176C624,149,672,107,720,80C768,53,816,43,864,53.3C912,64,960,96,1008,138.7C1056,181,1104,235,1152,218.7C1200,203,1248,117,1296,74.7C1344,32,1392,32,1416,32L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
-          class="relative dark:fill-[#041c36]"
-        ></path>
-        <h1 class="absolute right-10 bottom-10 text-9xl font-bold num" >03</h1>
-      </svg>
+      <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">03</h1>
     </div>
-    <div class="h-[calc(100vh-110px)] relative" id="section-4" style="">
+    <div class="h-screen relative" id="section-4" style="">
       <h1 class="text-9xl text-white">page4</h1>
-      <svg
-        style="position: absolute; left: 0; bottom: 0"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        class="relative"
-      >
-        <path
-          fill="#031625"
-          fill-opacity="1"
-          d="M0,192L24,202.7C48,213,96,235,144,208C192,181,240,107,288,101.3C336,96,384,160,432,186.7C480,213,528,203,576,176C624,149,672,107,720,80C768,53,816,43,864,53.3C912,64,960,96,1008,138.7C1056,181,1104,235,1152,218.7C1200,203,1248,117,1296,74.7C1344,32,1392,32,1416,32L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
-          class="relative dark:fill-[#031625]"
-        ></path>
-        <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">04</h1>
-      </svg>
+      <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">04</h1>
     </div>
     <script>
       $(window).on("scroll", function () {
