@@ -86,7 +86,7 @@
         bottom: 100px !important;
       }
       .profile {
-        filter: grayscale(1);
+        /* filter: grayscale(1); */
       }
       #section-1 {
         /* clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%); */
@@ -94,14 +94,14 @@
       }
       #section-2 {
         z-index: 10;
-        background: rgb(225, 227, 233);
+        background: rgb(246, 247, 247);
       }
       #section-2::before {
         content: "";
         position: absolute;
         width: 100%;
         height: 100px;
-        background: rgb(225, 227, 233);
+        background: rgb(246, 247, 247);
         top: -90px;
         clip-path: polygon(0 0, 100% 70%, 100% 100%, 0% 100%);
       }
@@ -134,11 +134,12 @@
         background: rgb(52, 97, 132);
       }
       .cir {
-        height: calc(100vh - 10px);
+        height: calc(100vh);
         width: 500px;
         background: rgb(20, 96, 119);
+
         position: fixed;
-        bottom: 60px;
+        bottom: 0px;
         right: -50px;
         border-radius: 50%;
         z-index: -10;
@@ -149,21 +150,29 @@
         -webkit-background-clip: text !important;
         color: transparent !important;
       }
-      .about-text{
+      .about-text {
         color: rgb(101, 100, 97);
       }
-      .capa{
+      .capa {
         position: absolute;
         width: 100%;
         height: 80%;
-        background: rgb(249, 239, 186);
+        background: rgb(223, 222, 222);
         filter: blur(60px);
         border-radius: 50%;
-      left: -20px;
-      bottom: 0px;
-      z-index: -1;
+        left: -20px;
+        bottom: 0px;
+        z-index: -1;
       }
- 
+      .about-me::after{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 4px;
+        background: rgb(101, 100, 97);
+        bottom: -5px;
+        left: 0;
+      }
     </style>
   </head>
   <body>
@@ -267,56 +276,118 @@
         </div>
         <div class="cir sm:block hidden"></div>
         <img
-          src="./img/profile.png"
+          src="./img/descarga (1).png"
           class="profile h-full hidden sm:block hidden fixed w-auto sm:top-[-0px] right-0 md:top-[0px]"
           style="z-index: -1"
           alt=""
         />
       </div>
     </div>
-    <div class="h-auto pb-0 sm:pb-10 md:pb-0 relative sm:flex-row flex-col flex" id="section-2">
-      <div class="section-2-left h-full w-full sm:w-7/12 px-10">
-        <h4 class="text-5xl font-bold about-text mb-10">Sobre mi</h4>
-        <div>
-          <div class="about-text">
-          <p class="text-2xl mb-5 text-justify">
-            Soy un entusiasta de la web que disfruta de la creación de
-            experiencias digitales atractivas y accesibles para todos.
-          </p>
-          <p class="text-2xl mb-5 text-justify">
-            Apasionado por la creatividad y la tecnología, mi objetivo es
-            utilizar mis habilidades para crear soluciones innovadoras y
-            emocionantes.
-          </p>
-          <p class="text-2xl mb-5 text-justify">
-            Creo que la mejor manera de aprender es a través de la
-            experimentación y la colaboración, y estoy emocionado de seguir
-            creciendo como profesional en el mundo del diseño y desarrollo web.
-          </p>
-        </div>
-          <h4 class="text-2xl mt-10 about-text mb-10 font-bold">Mis redes sociales</h4>
-          <div class="sociales flex gap-4">
-            <li class="list-none about-text text-4xl">
-              <a href="#" id="linkedin" class="relative"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </li>
-            <li class="list-none about-text text-4xl">
-              <a href="#" id="messenger" class="relative"
-                ><i class="bi bi-messenger"></i
-              ></a>
-            </li>
-            <li class="list-none about-text text-4xl">
-              <a href="#" id="git-hub" class="relative"
-                ><i class="bi bi-github"></i
-              ></a>
-            </li>
+    <div class="h-auto pb-0 sm:pb-10 md:pb-0 relative pt-2" id="section-2">
+      <div class="sm:flex-row flex-col flex h-[100%]">
+        <div class="section-2-left h-full w-full sm:w-7/12 px-10 sm:0 mb-10">
+          <h4 class="text-5xl font-bold about-text mb-10 relative about-me">Sobre mi</h4>
+          <div>
+            <div class="about-text">
+              <p class="text-2xl mb-5 text-justify">
+                Soy un entusiasta de la web que disfruta de la creación de
+                experiencias digitales atractivas y accesibles para todos.
+              </p>
+              <p class="text-2xl mb-5 text-justify">
+                Apasionado por la creatividad y la tecnología, mi objetivo es
+                utilizar mis habilidades para crear soluciones innovadoras y
+                emocionantes.
+              </p>
+              <p class="text-2xl mb-5 text-justify">
+                Creo que la mejor manera de aprender es a través de la
+                experimentación y la colaboración, y estoy emocionado de seguir
+                creciendo como profesional en el mundo del diseño y desarrollo
+                web.
+              </p>
+            </div>
+            <h4 class="text-2xl mt-10 about-text mb-2 font-bold">
+              Mis redes sociales
+            </h4>
+            <div class="sociales flex gap-4">
+              <li class="list-none about-text text-4xl">
+                <a href="#" id="linkedin" class="relative"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-none about-text text-4xl">
+                <a href="#" id="messenger" class="relative"
+                  ><i class="bi bi-messenger"></i
+                ></a>
+              </li>
+              <li class="list-none about-text text-4xl">
+                <a href="#" id="git-hub" class="relative"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </li>
+            </div>
           </div>
         </div>
+        <div
+          class="section-2-right sm:h-[600px] hidden sm:block h-[400px] w-full sm:w-5/12 relative"
+        >
+          <img
+            src="./img/portada4.png"
+            alt=""
+            class="h-full w-full object-contain"
+          />
+          <div class="absolute capa"></div>
+        </div>
       </div>
-      <div class="section-2-right sm:h-full h-[400px] w-full sm:w-5/12 relative">
-        <img src="./img/portada4.png" alt="" class="h-full w-full object-contain">
-   <div class="absolute capa"></div>
+      <div class="pb-20 px-10 about-text">
+        <h4 class="text-2xl about-text mb-2 font-bold">Mis tecnologías y herramientas</h4>
+        <div class="tools flex sm:flex-row flex-col sm:gap-14 gap-4 ">
+          <div>
+            <h4 class="text-2xl font-bold">Front end</h4>
+            <ul class="text-2xl">
+              <li>-&nbsp;HTML</li>
+              <li>-&nbsp;CSS</li>
+              <li>-&nbsp;JAVASCRIPT</li>
+              <li>-&nbsp;SVELTE</li>
+              <li>-&nbsp;REACT JS</li>
+              <li>-&nbsp;BOOTSTRAP</li>
+              <li>-&nbsp;BULMA</li>
+              <li>-&nbsp;MATERIAL UI</li>
+              <li>-&nbsp;TAILWIND CSS</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold">Back end</h4>
+            <ul class="text-2xl">
+              <li>-&nbsp;NODE JS</li>
+              <li>-&nbsp;EXPRESS</li>
+              <li>-&nbsp;PHP</li>
+              <li>-&nbsp;LARAVEL</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold">Bases de datos</h4>
+            <ul class="text-2xl">
+              <li>-&nbsp;MYSQL</li>
+              <li>-&nbsp;MARIA DB</li>
+              <li>-&nbsp;POSTGRE SQL</li>
+              <li>-&nbsp;MONGO DB</li>
+              <li>-&nbsp;REDIS</li>
+              <li>-&nbsp;FIREBASE</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold">Otros</h4>
+            <ul class="text-2xl">
+              <li>-&nbsp;AWS</li>
+              <li>-&nbsp;NPM</li>
+              <li>-&nbsp;EJS</li>
+              <li>-&nbsp;HANLDEBARS</li>
+              <li>-&nbsp;JADE</li>
+              <li>-&nbsp;JQUERY</li>
+              <li>-&nbsp;FIGMA</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">02</h1>
     </div>
