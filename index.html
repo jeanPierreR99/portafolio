@@ -9,10 +9,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+    <link rel="shortcut icon" href="img/logo3.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Document</title>
+    <title>Jean Pierre | Portafolio</title>
 
     <style>
+
+      :root{
+        --text-color: rgb(179, 191, 227);
+        --rose-color: #BE123C; 
+      }
       * {
         box-sizing: border-box;
         padding: 0;
@@ -26,119 +32,45 @@
       }
       .add-header {
         box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.244);
-        background: #041c36;
+        background: #042547;
       }
       .sociales li:hover {
-        color: rgb(237, 20, 85);
+        color: var(--rose-color);
         transition: 0.7s;
-      }
-      .section-header {
-        background: rgb(3, 34, 70);
-        background: linear-gradient(
-          90deg,
-          rgb(0, 29, 61) 0%,
-          rgba(4, 11, 19, 1) 100%
-        );
-      }
-      .es {
-        width: 100px;
-        height: 2px;
-        /* background: rgb(255, 255, 255); */
-      }
-      .es:nth-child(1) {
-        right: 60px;
-      }
-      .es:nth-child(2) {
-        right: 10px;
-        transform: rotate(90deg);
-        top: 50px;
-      }
-      .es:nth-child(3) {
-        right: 60px;
-        bottom: 170px;
-      }
-      .es:nth-child(4) {
-        right: 10px;
-        transform: rotate(90deg);
-        bottom: 220px;
-      }
-      .es:nth-child(5) {
-        left: 60px;
-        bottom: 170px;
-      }
-      .es:nth-child(6) {
-        left: 10px;
-        transform: rotate(90deg);
-        bottom: 220px;
-      }
-      .es:nth-child(7) {
-        left: 60px;
-      }
-      .es:nth-child(8) {
-        left: 10px;
-        transform: rotate(90deg);
-        top: 50px;
       }
       .num {
         color: transparent;
         font-family: fantasy;
-        -webkit-text-stroke: #969191a7 1px;
-        bottom: 100px !important;
+        -webkit-text-stroke: #7595be3a 1px;
       }
       .profile {
         filter: contrast(1.1);
-        opacity: .5;
-      }
-      #section-1 {
-        /* clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%); */
-        background: none;
+        opacity: 0.5;
       }
       #section-2 {
-        z-index: 10;
-        background: rgb(246, 247, 247);
-      }
-      #section-2::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100px;
-        background: rgb(246, 247, 247);
-        top: -90px;
-        clip-path: polygon(0 0, 100% 70%, 100% 100%, 0% 100%);
-      }
-      #section-3::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100px;
-        background: rgb(52, 97, 132);
-        top: -90px;
-        clip-path: polygon(0 70%, 100% 0, 100% 100%, 0% 100%);
-
-        z-index: 9999999 !important;
-      }
-      #section-4 {
-        z-index: 10;
-        background: #ffffff;
-      }
-      #section-4::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100px;
-        background: #ffffff;
-        top: -90px;
-        clip-path: polygon(0 0, 100% 70%, 100% 100%, 0% 100%);
+        overflow-x: hidden !important;
+        background: #042445;
+        -webkit-clip-path: polygon(0 0%, 100% 80px, 100% 100%, 0 100%);
+        clip-path: polygon(0 0%, 100% 80px, 100% 100%, 0 100%);
+        background-attachment: fixed;
       }
       #section-3 {
-        z-index: 10;
-        background: rgb(52, 97, 132);
+        overflow-x: hidden !important;
+        -webkit-clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%);
+        background: #021d38;
+      }
+      #section-4 {
+        overflow-x: hidden !important;
+        background: #042445;
+        -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0%, 100% 80px, 100% 100%, 0 100%);
+    
       }
       .cir {
         height: calc(100vh);
         width: 500px;
         background: rgb(20, 96, 119);
-
         position: fixed;
         bottom: 0px;
         right: -50px;
@@ -152,9 +84,9 @@
         color: transparent !important;
       }
       .about-text {
-        color: rgb(101, 100, 97);
+        color: var(--text-color);
       }
-      .capa {
+      /* .capa {
         position: absolute;
         width: 100%;
         height: 80%;
@@ -164,21 +96,40 @@
         left: -20px;
         bottom: 0px;
         z-index: -1;
-      }
-      .about-me::after{
+      } */
+      .about-me::after {
         content: "";
         position: absolute;
         width: 100px;
         height: 4px;
-        background: rgb(101, 100, 97);
+        background: var(--rose-color);
         bottom: -5px;
         left: 0;
       }
+
+      /* mediaquery */
+      @media (max-width: 640px) {
+        #section-2 {
+        -webkit-clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
+        clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
+      }
+      #section-3 {
+        -webkit-clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+      }
+      #section-4 {
+        -webkit-clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
+        clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
+    
+      }
+      }
+
     </style>
   </head>
   <body>
+    <!-- section-1 -->
     <div
-      class="section-header md:h-[150vh] h-[120vh] overflow-hidden relative"
+      class="section-header md:h-[cal(100vh + 100px)] h-[120vh] overflow-hidden relative"
       id="section-1"
     >
       <header
@@ -191,7 +142,7 @@
           alt=""
           class="h-26 md:w-48 md:h-34 m-auto md:m-0"
         />
-        <ul class="flex md:gap-6 gap-2 self-center justify-center">
+        <ul class="flex md:gap-6 gap-0 self-center justify-center">
           <li class="">
             <a
               onclick="saltarA()"
@@ -223,14 +174,6 @@
         </ul>
       </header>
       <div class="content-body w-full relative md:h-full md:mt-28 mt-48 z-10">
-        <span class="l1 es absolute"></span>
-        <span class="l2 es absolute"></span>
-        <span class="l3 es absolute"></span>
-        <span class="l4 es absolute"></span>
-        <span class="l5 es absolute"></span>
-        <span class="l6 es absolute"></span>
-        <span class="l7 es absolute"></span>
-        <span class="l8 es absolute"></span>
         <div
           class="left w-full md:pl-10 md:pt-20 pl-2 pt-2 flex flex-col gap-10 fixed"
           style="z-index: -10"
@@ -284,10 +227,14 @@
         />
       </div>
     </div>
-    <div class="h-auto pb-0 sm:pb-10 md:pb-0 relative pt-2" id="section-2">
+    <!-- end-section-1 -->
+    <!-- section-2 -->
+    <div class="h-auto pb-[200px] relative z-10 pt-[7%]" id="section-2">
       <div class="sm:flex-row flex-col flex h-[100%]">
         <div class="section-2-left h-full w-full sm:w-7/12 px-10 sm:0 mb-10">
-          <h4 class="text-5xl font-bold about-text mb-10 relative about-me">Sobre mi</h4>
+          <h4 class="text-5xl font-bold about-text mb-10 relative about-me">
+            Sobre mi
+          </h4>
           <div>
             <div class="about-text">
               <p class="text-2xl mb-5 text-justify">
@@ -340,16 +287,19 @@
         </div>
       </div>
       <div class="pb-20 px-10 about-text">
-        <h4 class="text-2xl about-text mb-2 font-bold">Mis tecnologías y herramientas</h4>
-        <div class="tools flex sm:flex-row flex-col sm:gap-14 gap-4 ">
+        <h4 class="text-2xl about-text mb-2 font-bold">
+          Mis tecnologías y herramientas
+        </h4>
+        <div class="tools flex sm:flex-row flex-col sm:gap-14 gap-4">
           <div>
             <h4 class="text-2xl font-bold">Front end</h4>
-            <ul class="text-2xl">
+            <ul class="text-2xl ">
               <li>-&nbsp;HTML</li>
               <li>-&nbsp;CSS</li>
               <li>-&nbsp;JAVASCRIPT</li>
               <li>-&nbsp;SVELTE</li>
               <li>-&nbsp;REACT JS</li>
+              <li>-&nbsp;WORDPRESS</li>
               <li>-&nbsp;BOOTSTRAP</li>
               <li>-&nbsp;BULMA</li>
               <li>-&nbsp;MATERIAL UI</li>
@@ -358,7 +308,7 @@
           </div>
           <div>
             <h4 class="text-2xl font-bold">Back end</h4>
-            <ul class="text-2xl">
+            <ul class="text-2xl ">
               <li>-&nbsp;NODE JS</li>
               <li>-&nbsp;EXPRESS</li>
               <li>-&nbsp;PHP</li>
@@ -367,10 +317,10 @@
           </div>
           <div>
             <h4 class="text-2xl font-bold">Bases de datos</h4>
-            <ul class="text-2xl">
+            <ul class="text-2xl ">
               <li>-&nbsp;MYSQL</li>
               <li>-&nbsp;MARIA DB</li>
-              <li>-&nbsp;SQL</li>
+              <li>-&nbsp;SQL SERVER</li>
               <li>-&nbsp;POSTGRE SQL</li>
               <li>-&nbsp;MONGO DB</li>
               <li>-&nbsp;REDIS</li>
@@ -379,11 +329,11 @@
           </div>
           <div>
             <h4 class="text-2xl font-bold">Otros</h4>
-            <ul class="text-2xl">
+            <ul class="text-2xl ">
               <li>-&nbsp;AWS</li>
               <li>-&nbsp;NPM</li>
               <li>-&nbsp;EJS</li>
-              <li>-&nbsp;HANLDEBARS</li>
+              <li>-&nbsp;HANDLEBARS</li>
               <li>-&nbsp;JADE</li>
               <li>-&nbsp;JQUERY</li>
               <li>-&nbsp;FIGMA</li>
@@ -391,16 +341,186 @@
           </div>
         </div>
       </div>
-      <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">02</h1>
+      <h1 class="absolute right-10 bottom-[200px] text-9xl font-bold num">02</h1>
     </div>
-    <div class="h-screen relative" id="section-3">
-      <h1 class="text-9xl text-white">page3</h1>
-      <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">03</h1>
+    <!-- end-section-2 -->
+    <!-- section-3 -->
+    <div class="h-auto pb-[200px] relative z-10 pt-[7%] mt-[-200px]" id="section-3">
+      <div class="sm:flex-row flex-col flex h-[100%]">
+        <div
+        class="section-2-right sm:h-[600px] hidden sm:block h-[400px] w-full sm:w-5/12 relative"
+      >
+        <img
+          src="./img/portada4.png"
+          alt=""
+          class="h-full w-full object-contain"
+        />
+        <div class="absolute capa"></div>
+      </div>
+        <div class="section-2-left h-full w-full sm:w-7/12 px-10 sm:0 mb-10">
+          <h4 class="text-5xl font-bold about-text mb-10 relative about-me">
+            Sobre mi
+          </h4>
+          <div>
+            <div class="about-text">
+              <p class="text-2xl mb-5 text-justify">
+                Soy un entusiasta de la web que disfruta de la creación de
+                experiencias digitales atractivas y accesibles para todos.
+              </p>
+              <p class="text-2xl mb-5 text-justify">
+                Apasionado por la creatividad y la tecnología, mi objetivo es
+                utilizar mis habilidades para crear soluciones innovadoras y
+                emocionantes.
+              </p>
+              <p class="text-2xl mb-5 text-justify">
+                Creo que la mejor manera de aprender es a través de la
+                experimentación y la colaboración, y estoy emocionado de seguir
+                creciendo como profesional en el mundo del diseño y desarrollo
+                web.
+              </p>
+            </div>
+            <h4 class="text-2xl mt-10 about-text mb-2 font-bold">
+              Mis redes sociales
+            </h4>
+            <div class="sociales flex gap-4">
+              <li class="list-none about-text text-4xl">
+                <a href="#" id="linkedin" class="relative"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-none about-text text-4xl">
+                <a href="#" id="messenger" class="relative"
+                  ><i class="bi bi-messenger"></i
+                ></a>
+              </li>
+              <li class="list-none about-text text-4xl">
+                <a href="#" id="git-hub" class="relative"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="absolute left-10 bottom-[200px] text-9xl font-bold num">03</h1>
     </div>
-    <div class="h-screen relative" id="section-4" style="">
-      <h1 class="text-9xl text-white">page4</h1>
-      <h1 class="absolute right-10 bottom-10 text-9xl font-bold num">04</h1>
+    <!-- end-section-3 -->
+    <!-- section-4 -->
+    <div class="h-auto relative z-10 pt-[7%] mt-[-200px]" id="section-4" style="">
+      <div class="sm:flex-row flex-col flex h-[100%]">
+        <div class="section-2-left h-full w-full sm:w-7/12 px-10 sm:0 mb-10">
+          <h4 class="text-5xl font-bold about-text mb-10 relative about-me">
+            Sobre mi
+          </h4>
+          <div>
+            <div class="about-text">
+              <p class="text-2xl mb-5 text-justify">
+                Soy un entusiasta de la web que disfruta de la creación de
+                experiencias digitales atractivas y accesibles para todos.
+              </p>
+              <p class="text-2xl mb-5 text-justify">
+                Apasionado por la creatividad y la tecnología, mi objetivo es
+                utilizar mis habilidades para crear soluciones innovadoras y
+                emocionantes.
+              </p>
+              <p class="text-2xl mb-5 text-justify">
+                Creo que la mejor manera de aprender es a través de la
+                experimentación y la colaboración, y estoy emocionado de seguir
+                creciendo como profesional en el mundo del diseño y desarrollo
+                web.
+              </p>
+            </div>
+            <h4 class="text-2xl mt-10 about-text mb-2 font-bold">
+              Mis redes sociales
+            </h4>
+            <div class="sociales flex gap-4">
+              <li class="list-none about-text text-4xl">
+                <a href="#" id="linkedin" class="relative"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-none about-text text-4xl">
+                <a href="#" id="messenger" class="relative"
+                  ><i class="bi bi-messenger"></i
+                ></a>
+              </li>
+              <li class="list-none about-text text-4xl">
+                <a href="#" id="git-hub" class="relative"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div
+          class="section-2-right sm:h-[600px] hidden sm:block h-[400px] w-full sm:w-5/12 relative"
+        >
+          <img
+            src="./img/portada4.png"
+            alt=""
+            class="h-full w-full object-contain"
+          />
+          <div class="absolute capa"></div>
+        </div>
+      </div>
+      <div class="pb-20 px-10 about-text">
+        <h4 class="text-2xl about-text mb-2 font-bold">
+          Mis tecnologías y herramientas
+        </h4>
+        <div class="tools flex sm:flex-row flex-col sm:gap-14 gap-4">
+          <div>
+            <h4 class="text-2xl font-bold">Front end</h4>
+            <ul class="text-2xl ">
+              <li>-&nbsp;HTML</li>
+              <li>-&nbsp;CSS</li>
+              <li>-&nbsp;JAVASCRIPT</li>
+              <li>-&nbsp;SVELTE</li>
+              <li>-&nbsp;REACT JS</li>
+              <li>-&nbsp;WORDPRESS</li>
+              <li>-&nbsp;BOOTSTRAP</li>
+              <li>-&nbsp;BULMA</li>
+              <li>-&nbsp;MATERIAL UI</li>
+              <li>-&nbsp;TAILWIND CSS</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold">Back end</h4>
+            <ul class="text-2xl ">
+              <li>-&nbsp;NODE JS</li>
+              <li>-&nbsp;EXPRESS</li>
+              <li>-&nbsp;PHP</li>
+              <li>-&nbsp;LARAVEL</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold">Bases de datos</h4>
+            <ul class="text-2xl ">
+              <li>-&nbsp;MYSQL</li>
+              <li>-&nbsp;MARIA DB</li>
+              <li>-&nbsp;SQL SERVER</li>
+              <li>-&nbsp;POSTGRE SQL</li>
+              <li>-&nbsp;MONGO DB</li>
+              <li>-&nbsp;REDIS</li>
+              <li>-&nbsp;FIREBASE</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-2xl font-bold">Otros</h4>
+            <ul class="text-2xl ">
+              <li>-&nbsp;AWS</li>
+              <li>-&nbsp;NPM</li>
+              <li>-&nbsp;EJS</li>
+              <li>-&nbsp;HANDLEBARS</li>
+              <li>-&nbsp;JADE</li>
+              <li>-&nbsp;JQUERY</li>
+              <li>-&nbsp;FIGMA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h1 class="absolute right-10 bottom-[200px] text-9xl font-bold num">04</h1>
     </div>
+    <!-- end-section-4 -->
     <script>
       $(window).on("scroll", function () {
         if ($(window).scrollTop() == 0) {
@@ -420,21 +540,21 @@
       function saltarB() {
         var tiempo = 700;
         $("html, body").animate(
-          { scrollTop: $("#section-2").offset().top - 110 },
+          { scrollTop: $("#section-2").offset().top - 10 },
           tiempo
         );
       }
       function saltarC() {
         var tiempo = 700;
         $("html, body").animate(
-          { scrollTop: $("#section-3").offset().top - 110 },
+          { scrollTop: $("#section-3").offset().top - 10 },
           tiempo
         );
       }
       function saltarD() {
         var tiempo = 700;
         $("html, body").animate(
-          { scrollTop: $("#section-4").offset().top - 110 },
+          { scrollTop: $("#section-4").offset().top - 10 },
           tiempo
         );
       }
