@@ -1,118 +1,118 @@
 :root{
-    --text-color: rgb(179, 191, 227);
-    --title-color: rgb(219, 223, 236);
-    --rose-color: #BE123C; 
-  }
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  body {
-    background: #041c36;
-  }
+  --text-color: rgb(179, 191, 227);
+  --title-color: rgb(219, 223, 236);
+  --rose-color: #BE123C; 
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #041c36;
+}
 
-  body::-webkit-scrollbar {
-    width: 15px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: rgb(203, 209, 213);        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--rose-color);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid rgb(213, 211, 203);  /* creates padding around scroll thumb */
-  }
+body::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
 
-  header {
-    height: 100px;
-  }
-  .add-header {
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.244);
-    background: #042547;
-  }
-  .sociales li:hover {
-    color: var(--rose-color);
-    transition: 0.7s;
-  }
-  .num {
-    color: transparent;
-    font-family: fantasy;
-    -webkit-text-stroke: #7595be3a 1px;
-  }
-  .profile {
-    filter: contrast(1.1);
-    opacity: 0.5;
-  }
-  #section-2 {
-    overflow-x: hidden !important;
-    background: #042445;
-    -webkit-clip-path: polygon(0 0%, 100% 80px, 100% 100%, 0 100%);
-    clip-path: polygon(0 0%, 100% 80px, 100% 100%, 0 100%);
-    background-attachment: fixed;
-  }
-  #section-3 {
-    overflow-x: hidden !important;
-    -webkit-clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%);
-    background: #021d38;
-  }
-  #section-4 {
-    overflow-x: hidden !important;
-    background: #042445;
-    -webkit-clip-path: polygon(0 0%, 100% 7%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0%, 100% 80px, 100% 100%, 0 100%);
+body::-webkit-scrollbar-track {
+  background: rgb(203, 209, 213);        /* color of the tracking area */
+}
 
-  }
-  .cir {
-    height: calc(100vh);
-    width: 500px;
-    background: rgb(20, 96, 119);
-    position: fixed;
-    bottom: 0px;
-    right: -50px;
-    border-radius: 50%;
-    z-index: -10;
-    filter: blur(83px);
-  }
-  .name {
-    background: linear-gradient(hsl(0, 0%, 100%), #949494) !important;
-    -webkit-background-clip: text !important;
-    color: transparent !important;
-  }
-  .title-color{
-    color: var(--title-color);
-  }
-  .text-color {
-    color: var(--text-color);
-  }
-  /* .capa {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    background: rgba(2, 24, 68, 0.544);
-    filter: blur(60px);
-    border-radius: 50%;
-    left: -20px;
-    bottom: -100px;
-    z-index: -1;
-  } */
-  .about-me::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 4px;
-    background: var(--rose-color);
-    bottom: -5px;
-    left: 0;
-  }
+body::-webkit-scrollbar-thumb {
+  background-color: var(--rose-color);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(213, 211, 203);  /* creates padding around scroll thumb */
+}
+
+header {
+  height: 100px;
+}
+.add-header {
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.244);
+  background: #042547;
+}
+.sociales li:hover {
+  color: var(--rose-color);
+  transition: 0.7s;
+}
+.num {
+  color: transparent;
+  font-family: fantasy;
+  -webkit-text-stroke: #7595be3a 1px;
+}
+.profile {
+  filter: contrast(1.1);
+  opacity: 0.5;
+}
+#section-2 {
+  overflow-x: hidden !important;
+  background: #042445;
+  -webkit-clip-path: polygon(0 0%, 100% 80px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0%, 100% 80px, 100% 100%, 0 100%);
+
+}
+#section-3 {
+  overflow-x: hidden !important;
+  background: #021d38;
+  /* -webkit-clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%); */
+  clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%);
+}
+#section-4 {
+  overflow-x: hidden !important;
+  background: #042445;
+  /* -webkit-clip-path:polygon(0 0%, 100% 80px, 100% 100%, 0 100%); */
+  clip-path: polygon(0 0%, 100% 80px, 100% 100%, 0 100%);
+
+}
+.cir {
+  height: calc(100vh);
+  width: 500px;
+  background: rgb(20, 96, 119);
+  position: fixed;
+  bottom: 0px;
+  right: -50px;
+  border-radius: 50%;
+  z-index: -10;
+  filter: blur(83px);
+}
+.name {
+  background: linear-gradient(hsl(0, 0%, 100%), #949494) !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
+.title-color{
+  color: var(--title-color);
+}
+.text-color {
+  color: var(--text-color);
+}
+/* .capa {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: rgba(2, 24, 68, 0.544);
+  filter: blur(60px);
+  border-radius: 50%;
+  left: -20px;
+  bottom: -100px;
+  z-index: -1;
+} */
+.about-me::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background: var(--rose-color);
+  bottom: -5px;
+  left: 0;
+}
 .tools .tools-box{
-  width: 300px;
-  box-shadow:  4px 10px 12px rgba(4, 15, 37, 0.24);
-  padding: 20px;
-  text-align: center;
+width: 300px;
+box-shadow:  4px 10px 12px rgba(4, 15, 37, 0.24);
+padding: 20px;
+text-align: center;
 margin: 0 auto 0 auto;
 transition: .6s ease-out;overflow: hidden;
 }
@@ -122,19 +122,19 @@ box-shadow:  6px 12px 12px rgba(4, 15, 37, 0.621);
 }
 
 
-  /* mediaquery */
-  @media (max-width: 640px) {
-    #section-2 {
-    -webkit-clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
-    clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
-  }
-  #section-3 {
-    -webkit-clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
-  }
-  #section-4 {
-    -webkit-clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
-    clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
+/* mediaquery */
+@media (max-width: 640px) {
+  #section-2 {
+  -webkit-clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
+}
+#section-3 {
+  -webkit-clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+}
+#section-4 {
+  -webkit-clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
 
-  }
-  }
+}
+}

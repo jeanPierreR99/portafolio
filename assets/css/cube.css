@@ -1,6 +1,6 @@
-:root{
+:root {
   --text-color: rgb(179, 191, 227);
-  --rose-color: #BE123C; 
+  --rose-color: #be123c;
 }
 .cube {
   width: 300px;
@@ -11,7 +11,7 @@
   cursor: pointer;
   transform: rotateX(40deg) rotateY(40deg);
 }
-.cube:hover .cube-side{
+.cube:hover .cube-side {
   box-shadow: inset 55px 55px 54px rgba(255, 255, 255, 0.031);
 }
 .cube .cube-side {
@@ -19,7 +19,7 @@
   width: 100%;
   height: 100%;
   background: #0c2e50;
-  transition: .6s ease-out;
+  transition: 0.6s ease-out;
   box-shadow: inset 15px 15px 24px rgba(255, 255, 255, 0.051);
 }
 .cube .cube-front {
@@ -48,13 +48,13 @@
 
 /* cube 1 */
 
-.tools .tools-box:hover .content-cube{
+.tools .tools-box:hover .content-cube {
   transform: translateY(-700px) rotateZ(-180deg);
 }
-.content-cube{
-bottom: -200px;
-transition: 2S ease-in-out;
-z-index: -100;
+.content-cube {
+  bottom: -200px;
+  transition: 2s ease-in-out;
+  z-index: -100;
 }
 .cube-1 {
   width: 100px;
@@ -63,7 +63,6 @@ z-index: -100;
   transform-style: preserve-3d;
   cursor: pointer;
   transform: rotateX(40deg) rotateY(40deg);
-
 }
 .cube-1 .cube-side-1 {
   position: absolute;
@@ -98,4 +97,3 @@ z-index: -100;
   transform: rotateY(-90deg) translateZ(50px);
   background: rgb(239, 246, 246);
 }
-

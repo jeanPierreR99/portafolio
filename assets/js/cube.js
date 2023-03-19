@@ -1,3 +1,82 @@
+$('.section-2-right').html(Cube);
+
+function Cube(){
+  return `<div class="cube select-none" id="cube">
+  <div
+    class="cube-side cube-front text-white text-center flex justify-center items-center"
+  >
+    <ul class="">
+      <li>NODE JS</li>
+      <li>PHP</li>
+      <li>MYSQL</li>
+      <li>FIREBASE</li>
+      <li>LARAVEL</li>
+      <li>EXPRESS</li>
+    </ul>
+  </div>
+  <div
+    class="cube-side cube-back text-white text-center flex justify-center items-center"
+  >
+    <ul class="">
+      <li>NODE JS</li>
+      <li>PHP</li>
+      <li>MYSQL</li>
+      <li>FIREBASE</li>
+      <li>LARAVEL</li>
+      <li>EXPRESS</li>
+    </ul>
+  </div>
+  <div
+    class="cube-side cube-top text-white text-center flex justify-center items-center"
+  >
+    <ul class="">
+      <li>NODE JS</li>
+      <li>PHP</li>
+      <li>MYSQL</li>
+      <li>FIREBASE</li>
+      <li>LARAVEL</li>
+      <li>EXPRESS</li>
+    </ul>
+  </div>
+  <div
+    class="cube-side cube-bottom text-white text-center flex justify-center items-center"
+  >
+    <ul class="">
+      <li>NODE JS</li>
+      <li>PHP</li>
+      <li>MYSQL</li>
+      <li>FIREBASE</li>
+      <li>LARAVEL</li>
+      <li>EXPRESS</li>
+    </ul>
+  </div>
+  <div
+    class="cube-side cube-left text-white text-center flex justify-center items-center"
+  >
+    <ul class="">
+      <li>NODE JS</li>
+      <li>PHP</li>
+      <li>MYSQL</li>
+      <li>FIREBASE</li>
+      <li>LARAVEL</li>
+      <li>EXPRESS</li>
+    </ul>
+  </div>
+  <div
+    class="cube-side cube-right text-white text-center flex justify-center items-center"
+  >
+    <ul class="">
+      <li>NODE JS</li>
+      <li>PHP</li>
+      <li>MYSQL</li>
+      <li>FIREBASE</li>
+      <li>LARAVEL</li>
+      <li>EXPRESS</li>
+    </ul>
+  </div>
+</div>`
+}
+
 const cube = document.getElementById('cube');
 
 let isDragging = false;
