@@ -88,11 +88,11 @@
     position: absolute;
     width: 100%;
     height: 80%;
-    background: rgb(223, 222, 222);
+    background: rgba(2, 24, 68, 0.544);
     filter: blur(60px);
     border-radius: 50%;
     left: -20px;
-    bottom: 0px;
+    bottom: -100px;
     z-index: -1;
   } */
   .about-me::after {

@@ -10,29 +10,28 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/cube.css" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <link
-      rel="shortcut icon"
-      href="./assets/public/img/logo3.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/public/img/logo3.png" type="image/x-icon"/>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>Jean Pierre | Portafolio</title>
-  
   </head>
   <body onload="ready()" id="body" onbeforeunload="beforeLoad()">
-
     <div
       class="welcome text-9xl absolute h-screen bg-white w-full"
       style="z-index: 1000000"
     >
-      <div class="welcome-text w-6/12 flex absolute flex justify-center top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" style="opacity: 0;">
+      <div
+        class="welcome-text w-6/12 flex absolute flex justify-center top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+        style="opacity: 0"
+      >
         <h1 class="">HI</h1>
-        
       </div>
     </div>
-        <!-- section-1 -->
+    <!-- section-1 -->
     <div
       class="section-header md:h-[cal(100vh + 100px)] h-[120vh] overflow-hidden relative"
       id="section-1"
@@ -368,15 +367,79 @@
           </div>
         </div>
         <div
-          class="section-2-right sm:h-[600px] hidden sm:block h-[400px] w-full sm:w-5/12 relative"
+          class="section-2-right sm:h-[] hidden sm:block h-[400] w-full sm:w-5/12 relative sm:flex sm:justify-center items-center"
         >
           <!-- <img
             src="./assets/public/img/portada4.png"
             alt=""
             class="h-full w-full object-contain"
           /> -->
-          <iframe src="https://jp-portafolio.netlify.app/3d.html" frameborder="0" class="h-full w-full"></iframe>
-          <div class="absolute capa"></div>
+
+          
+          <div class="cube select-none" id="cube">
+            <div class="cube-side cube-front text-white text-center flex justify-center items-center">
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div class="cube-side cube-back text-white text-center flex justify-center items-center" >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div class="cube-side cube-top text-white text-center flex justify-center items-center" >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div class="cube-side cube-bottom text-white text-center flex justify-center items-center" >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div class="cube-side cube-left text-white text-center flex justify-center items-center" >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div class="cube-side cube-right text-white text-center flex justify-center items-center" >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- <div class="absolute capa"></div> -->
         </div>
       </div>
       <div class="pb-20 px-10 about-text">
@@ -439,10 +502,15 @@
       </h1>
     </div>
     <!-- end-section-4 -->
-    
-    <div class=" w-full h-[100vh] absolute z-10">
-      <iframe class="h-full w-full" src="https://jp-portafolio.netlify.app/3d.html" frameborder="0"></iframe>
+
+    <div class="w-full h-[100vh] absolute z-10">
+      <iframe
+        class="h-full w-full"
+        src="https://jp-portafolio.netlify.app/3d.html"
+        frameborder="0"
+      ></iframe>
     </div>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/cube.js"></script>
   </body>
 </html>
