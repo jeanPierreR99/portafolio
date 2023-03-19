@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="./assets/css/cube.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <link rel="shortcut icon" href="./assets/public/img/logo3.png" type="image/x-icon"/>
+    <link
+      rel="shortcut icon"
+      href="./assets/public/img/logo3.png"
+      type="image/x-icon"
+    />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -33,7 +37,7 @@
     </div>
     <!-- section-1 -->
     <div
-      class="section-header md:h-[cal(100vh + 100px)] h-[120vh] overflow-hidden relative"
+      class="section-header h-[100vh] overflow-hidden relative"
       id="section-1"
     >
       <header
@@ -137,42 +141,42 @@
     <div class="h-auto pb-[200px] relative z-10 pt-[7%]" id="section-2">
       <div class="sm:flex-row flex-col flex h-[100%]">
         <div class="section-2-left h-full w-full sm:w-7/12 px-10 sm:0 mb-10">
-          <h4 class="text-5xl font-bold about-text mb-10 relative about-me">
+          <h4 class="text-4xl font-bold title-color mb-10 relative about-me">
             Sobre mi
           </h4>
           <div>
-            <div class="about-text">
-              <p class="text-2xl mb-5 text-justify">
+            <div class="text-color">
+              <p class="text-1xl mb-5 text-justify">
                 Soy un entusiasta de la web que disfruta de la creación de
                 experiencias digitales atractivas y accesibles para todos.
               </p>
-              <p class="text-2xl mb-5 text-justify">
+              <p class="text-1xl mb-5 text-justify">
                 Apasionado por la creatividad y la tecnología, mi objetivo es
                 utilizar mis habilidades para crear soluciones innovadoras y
                 emocionantes.
               </p>
-              <p class="text-2xl mb-5 text-justify">
+              <p class="text-1xl mb-5 text-justify">
                 Creo que la mejor manera de aprender es a través de la
                 experimentación y la colaboración, y estoy emocionado de seguir
                 creciendo como profesional en el mundo del diseño y desarrollo
                 web.
               </p>
             </div>
-            <h4 class="text-2xl mt-10 about-text mb-2 font-bold">
+            <h4 class="text-1xl mt-10 title-color mb-2 font-bold">
               Mis redes sociales
             </h4>
             <div class="sociales flex gap-4">
-              <li class="list-none about-text text-4xl">
+              <li class="list-none text-color text-2xl">
                 <a href="#" id="linkedin" class="relative"
                   ><i class="bi bi-linkedin"></i
                 ></a>
               </li>
-              <li class="list-none about-text text-4xl">
+              <li class="list-none text-color text-2xl">
                 <a href="#" id="messenger" class="relative"
                   ><i class="bi bi-messenger"></i
                 ></a>
               </li>
-              <li class="list-none about-text text-4xl">
+              <li class="list-none text-color text-2xl">
                 <a href="#" id="git-hub" class="relative"
                   ><i class="bi bi-github"></i
                 ></a>
@@ -181,71 +185,238 @@
           </div>
         </div>
         <div
-          class="section-2-right sm:h-[600px] hidden sm:block h-[400px] w-full sm:w-5/12 relative"
+          class="section-2-right sm:h-[] hidden sm:block h-[400] w-full sm:w-5/12 relative sm:flex sm:justify-center items-center"
         >
-          <img
-            src="./assets/public/img/portada4.png"
-            alt=""
-            class="h-full w-full object-contain"
-          />
+          <div class="cube select-none" id="cube">
+            <div
+              class="cube-side cube-front text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div
+              class="cube-side cube-back text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div
+              class="cube-side cube-top text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div
+              class="cube-side cube-bottom text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div
+              class="cube-side cube-left text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div
+              class="cube-side cube-right text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+          </div>
           <div class="absolute capa"></div>
         </div>
       </div>
-      <div class="pb-20 px-10 about-text">
-        <h4 class="text-2xl about-text mb-2 font-bold">
+      <div class="pb-20 px-10 text-color">
+        <h4 class="text-1xl title-color mb-2 font-bold">
           Mis tecnologías y herramientas
         </h4>
-        <div class="tools flex sm:flex-row flex-col sm:gap-14 gap-4">
-          <div>
-            <h4 class="text-2xl font-bold">Front end</h4>
-            <ul class="text-2xl">
-              <li>-&nbsp;HTML</li>
-              <li>-&nbsp;CSS</li>
-              <li>-&nbsp;JAVASCRIPT</li>
-              <li>-&nbsp;SVELTE</li>
-              <li>-&nbsp;REACT JS</li>
-              <li>-&nbsp;WORDPRESS</li>
-              <li>-&nbsp;BOOTSTRAP</li>
-              <li>-&nbsp;BULMA</li>
-              <li>-&nbsp;MATERIAL UI</li>
-              <li>-&nbsp;TAILWIND CSS</li>
+        <div
+          class="tools flex sm:flex-row sm:justify-around flex-col sm:gap-14 gap-4 justify-center"
+        >
+          <div class="tools-box relative">
+            <!-- <h4 class="text-1xl title-color">Front end</h4> -->
+            <i class="bi bi-puzzle text-5xl title-color"></i>
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Svelte</li>
+              <li>React JS</li>
+              <li>Wordpress</li>
+              <li>Bootstrap</li>
+              <li>-Material UI</li>
+              <li>Tailwind CSS</li>
             </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4 class="text-2xl font-bold">Back end</h4>
-            <ul class="text-2xl">
-              <li>-&nbsp;NODE JS</li>
-              <li>-&nbsp;EXPRESS</li>
-              <li>-&nbsp;PHP</li>
-              <li>-&nbsp;LARAVEL</li>
+          <div class="tools-box relative">
+            <!-- <h4 class="text-1xl title-color">Back end</h4> -->
+            <i class="bi bi-code-square text-5xl title-color"></i>
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Node JS</li>
+              <li>Express</li>
+              <li>PHP</li>
+              <li>Laravel</li>
             </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4 class="text-2xl font-bold">Bases de datos</h4>
-            <ul class="text-2xl">
-              <li>-&nbsp;MYSQL</li>
-              <li>-&nbsp;MARIA DB</li>
-              <li>-&nbsp;SQL SERVER</li>
-              <li>-&nbsp;POSTGRE SQL</li>
-              <li>-&nbsp;MONGO DB</li>
-              <li>-&nbsp;REDIS</li>
-              <li>-&nbsp;FIREBASE</li>
+          <div class="tools-box relative">
+            <i class="bi bi-database text-5xl title-color"></i>
+            <!-- <h4 class="text-1xl title-color">Bases de datos</h4> -->
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Mysql</li>
+              <li>Maria DB</li>
+              <li>Sql Server</li>
+              <li>Postgre Sql</li>
+              <li>Mongo DB</li>
+              <li>Redis</li>
+              <li>Firebase</li>
             </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4 class="text-2xl font-bold">Otros</h4>
-            <ul class="text-2xl">
-              <li>-&nbsp;AWS</li>
-              <li>-&nbsp;NPM</li>
-              <li>-&nbsp;EJS</li>
-              <li>-&nbsp;HANDLEBARS</li>
-              <li>-&nbsp;JADE</li>
-              <li>-&nbsp;JQUERY</li>
-              <li>-&nbsp;FIGMA</li>
+          <div class="tools-box relative">
+            <i class="bi bi-diagram-3 text-5xl title-color"></i>
+            <!-- <h4 class="text-1xl title-color">Otros</h4> -->
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Aws</li>
+              <li>Npm</li>
+              <li>Ejs</li>
+              <li>Handlebars</li>
+              <li>Jade</li>
+              <li>Jquery</li>
+              <li>Figma</li>
             </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       <h1 class="absolute right-10 bottom-[200px] text-9xl font-bold num">
         02
       </h1>
@@ -257,57 +428,278 @@
       id="section-3"
     >
       <div class="sm:flex-row flex-col flex h-[100%]">
-        <div
-          class="section-2-right sm:h-[600px] hidden sm:block h-[400px] w-full sm:w-5/12 relative"
-        >
-          <img
-            src="./assets/public/img/portada4.png"
-            alt=""
-            class="h-full w-full object-contain"
-          />
-          <div class="absolute capa"></div>
-        </div>
         <div class="section-2-left h-full w-full sm:w-7/12 px-10 sm:0 mb-10">
-          <h4 class="text-5xl font-bold about-text mb-10 relative about-me">
+          <h4 class="text-4xl font-bold title-color mb-10 relative about-me">
             Sobre mi
           </h4>
           <div>
-            <div class="about-text">
-              <p class="text-2xl mb-5 text-justify">
+            <div class="text-color">
+              <p class="text-1xl mb-5 text-justify">
                 Soy un entusiasta de la web que disfruta de la creación de
                 experiencias digitales atractivas y accesibles para todos.
               </p>
-              <p class="text-2xl mb-5 text-justify">
+              <p class="text-1xl mb-5 text-justify">
                 Apasionado por la creatividad y la tecnología, mi objetivo es
                 utilizar mis habilidades para crear soluciones innovadoras y
                 emocionantes.
               </p>
-              <p class="text-2xl mb-5 text-justify">
+              <p class="text-1xl mb-5 text-justify">
                 Creo que la mejor manera de aprender es a través de la
                 experimentación y la colaboración, y estoy emocionado de seguir
                 creciendo como profesional en el mundo del diseño y desarrollo
                 web.
               </p>
             </div>
-            <h4 class="text-2xl mt-10 about-text mb-2 font-bold">
+            <h4 class="text-1xl mt-10 title-color mb-2 font-bold">
               Mis redes sociales
             </h4>
             <div class="sociales flex gap-4">
-              <li class="list-none about-text text-4xl">
+              <li class="list-none text-color text-2xl">
                 <a href="#" id="linkedin" class="relative"
                   ><i class="bi bi-linkedin"></i
                 ></a>
               </li>
-              <li class="list-none about-text text-4xl">
+              <li class="list-none text-color text-2xl">
                 <a href="#" id="messenger" class="relative"
                   ><i class="bi bi-messenger"></i
                 ></a>
               </li>
-              <li class="list-none about-text text-4xl">
+              <li class="list-none text-color text-2xl">
                 <a href="#" id="git-hub" class="relative"
                   ><i class="bi bi-github"></i
                 ></a>
               </li>
+            </div>
+          </div>
+        </div>
+        <div
+          class="section-2-right sm:h-[] hidden sm:block h-[400] w-full sm:w-5/12 relative sm:flex sm:justify-center items-center"
+        >
+          <div class="cube select-none" id="cube">
+            <div
+              class="cube-side cube-front text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div
+              class="cube-side cube-back text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div
+              class="cube-side cube-top text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div
+              class="cube-side cube-bottom text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div
+              class="cube-side cube-left text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+            <div
+              class="cube-side cube-right text-white text-center flex justify-center items-center"
+            >
+              <ul class="">
+                <li>NODE JS</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>FIREBASE</li>
+                <li>LARAVEL</li>
+                <li>EXPRESS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="absolute capa"></div>
+        </div>
+      </div>
+      <div class="pb-20 px-10 text-color">
+        <h4 class="text-1xl title-color mb-2 font-bold">
+          Mis tecnologías y herramientas
+        </h4>
+        <div
+          class="tools flex sm:flex-row sm:justify-around flex-col sm:gap-14 gap-4 justify-center"
+        >
+          <div class="tools-box relative">
+            <!-- <h4 class="text-1xl title-color">Front end</h4> -->
+            <i class="bi bi-puzzle text-5xl title-color"></i>
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Svelte</li>
+              <li>React JS</li>
+              <li>Wordpress</li>
+              <li>Bootstrap</li>
+              <li>-Material UI</li>
+              <li>Tailwind CSS</li>
+            </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="tools-box relative">
+            <!-- <h4 class="text-1xl title-color">Back end</h4> -->
+            <i class="bi bi-code-square text-5xl title-color"></i>
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Node JS</li>
+              <li>Express</li>
+              <li>PHP</li>
+              <li>Laravel</li>
+            </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="tools-box relative">
+            <i class="bi bi-database text-5xl title-color"></i>
+            <!-- <h4 class="text-1xl title-color">Bases de datos</h4> -->
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Mysql</li>
+              <li>Maria DB</li>
+              <li>Sql Server</li>
+              <li>Postgre Sql</li>
+              <li>Mongo DB</li>
+              <li>Redis</li>
+              <li>Firebase</li>
+            </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="tools-box relative">
+            <i class="bi bi-diagram-3 text-5xl title-color"></i>
+            <!-- <h4 class="text-1xl title-color">Otros</h4> -->
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Aws</li>
+              <li>Npm</li>
+              <li>Ejs</li>
+              <li>Handlebars</li>
+              <li>Jade</li>
+              <li>Jquery</li>
+              <li>Figma</li>
+            </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
@@ -323,42 +715,42 @@
     >
       <div class="sm:flex-row flex-col flex h-[100%]">
         <div class="section-2-left h-full w-full sm:w-7/12 px-10 sm:0 mb-10">
-          <h4 class="text-5xl font-bold about-text mb-10 relative about-me">
+          <h4 class="text-4xl font-bold title-color mb-10 relative about-me">
             Sobre mi
           </h4>
           <div>
-            <div class="about-text">
-              <p class="text-2xl mb-5 text-justify">
+            <div class="text-color">
+              <p class="text-1xl mb-5 text-justify">
                 Soy un entusiasta de la web que disfruta de la creación de
                 experiencias digitales atractivas y accesibles para todos.
               </p>
-              <p class="text-2xl mb-5 text-justify">
+              <p class="text-1xl mb-5 text-justify">
                 Apasionado por la creatividad y la tecnología, mi objetivo es
                 utilizar mis habilidades para crear soluciones innovadoras y
                 emocionantes.
               </p>
-              <p class="text-2xl mb-5 text-justify">
+              <p class="text-1xl mb-5 text-justify">
                 Creo que la mejor manera de aprender es a través de la
                 experimentación y la colaboración, y estoy emocionado de seguir
                 creciendo como profesional en el mundo del diseño y desarrollo
                 web.
               </p>
             </div>
-            <h4 class="text-2xl mt-10 about-text mb-2 font-bold">
+            <h4 class="text-1xl mt-10 title-color mb-2 font-bold">
               Mis redes sociales
             </h4>
             <div class="sociales flex gap-4">
-              <li class="list-none about-text text-4xl">
+              <li class="list-none text-color text-2xl">
                 <a href="#" id="linkedin" class="relative"
                   ><i class="bi bi-linkedin"></i
                 ></a>
               </li>
-              <li class="list-none about-text text-4xl">
+              <li class="list-none text-color text-2xl">
                 <a href="#" id="messenger" class="relative"
                   ><i class="bi bi-messenger"></i
                 ></a>
               </li>
-              <li class="list-none about-text text-4xl">
+              <li class="list-none text-color text-2xl">
                 <a href="#" id="git-hub" class="relative"
                   ><i class="bi bi-github"></i
                 ></a>
@@ -369,15 +761,10 @@
         <div
           class="section-2-right sm:h-[] hidden sm:block h-[400] w-full sm:w-5/12 relative sm:flex sm:justify-center items-center"
         >
-          <!-- <img
-            src="./assets/public/img/portada4.png"
-            alt=""
-            class="h-full w-full object-contain"
-          /> -->
-
-          
           <div class="cube select-none" id="cube">
-            <div class="cube-side cube-front text-white text-center flex justify-center items-center">
+            <div
+              class="cube-side cube-front text-white text-center flex justify-center items-center"
+            >
               <ul class="">
                 <li>NODE JS</li>
                 <li>PHP</li>
@@ -387,7 +774,9 @@
                 <li>EXPRESS</li>
               </ul>
             </div>
-            <div class="cube-side cube-back text-white text-center flex justify-center items-center" >
+            <div
+              class="cube-side cube-back text-white text-center flex justify-center items-center"
+            >
               <ul class="">
                 <li>NODE JS</li>
                 <li>PHP</li>
@@ -397,7 +786,9 @@
                 <li>EXPRESS</li>
               </ul>
             </div>
-            <div class="cube-side cube-top text-white text-center flex justify-center items-center" >
+            <div
+              class="cube-side cube-top text-white text-center flex justify-center items-center"
+            >
               <ul class="">
                 <li>NODE JS</li>
                 <li>PHP</li>
@@ -407,7 +798,9 @@
                 <li>EXPRESS</li>
               </ul>
             </div>
-            <div class="cube-side cube-bottom text-white text-center flex justify-center items-center" >
+            <div
+              class="cube-side cube-bottom text-white text-center flex justify-center items-center"
+            >
               <ul class="">
                 <li>NODE JS</li>
                 <li>PHP</li>
@@ -417,7 +810,9 @@
                 <li>EXPRESS</li>
               </ul>
             </div>
-            <div class="cube-side cube-left text-white text-center flex justify-center items-center" >
+            <div
+              class="cube-side cube-left text-white text-center flex justify-center items-center"
+            >
               <ul class="">
                 <li>NODE JS</li>
                 <li>PHP</li>
@@ -427,7 +822,9 @@
                 <li>EXPRESS</li>
               </ul>
             </div>
-            <div class="cube-side cube-right text-white text-center flex justify-center items-center" >
+            <div
+              class="cube-side cube-right text-white text-center flex justify-center items-center"
+            >
               <ul class="">
                 <li>NODE JS</li>
                 <li>PHP</li>
@@ -438,62 +835,158 @@
               </ul>
             </div>
           </div>
-      
-          <!-- <div class="absolute capa"></div> -->
+          <div class="absolute capa"></div>
         </div>
       </div>
-      <div class="pb-20 px-10 about-text">
-        <h4 class="text-2xl about-text mb-2 font-bold">
+      <div class="pb-20 px-10 text-color">
+        <h4 class="text-1xl title-color mb-2 font-bold">
           Mis tecnologías y herramientas
         </h4>
-        <div class="tools flex sm:flex-row flex-col sm:gap-14 gap-4">
-          <div>
-            <h4 class="text-2xl font-bold">Front end</h4>
-            <ul class="text-2xl">
-              <li>-&nbsp;HTML</li>
-              <li>-&nbsp;CSS</li>
-              <li>-&nbsp;JAVASCRIPT</li>
-              <li>-&nbsp;SVELTE</li>
-              <li>-&nbsp;REACT JS</li>
-              <li>-&nbsp;WORDPRESS</li>
-              <li>-&nbsp;BOOTSTRAP</li>
-              <li>-&nbsp;BULMA</li>
-              <li>-&nbsp;MATERIAL UI</li>
-              <li>-&nbsp;TAILWIND CSS</li>
+        <div
+          class="tools flex sm:flex-row sm:justify-around flex-col sm:gap-14 gap-4 justify-center"
+        >
+          <div class="tools-box relative">
+            <!-- <h4 class="text-1xl title-color">Front end</h4> -->
+            <i class="bi bi-puzzle text-5xl title-color"></i>
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Svelte</li>
+              <li>React JS</li>
+              <li>Wordpress</li>
+              <li>Bootstrap</li>
+              <li>-Material UI</li>
+              <li>Tailwind CSS</li>
             </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4 class="text-2xl font-bold">Back end</h4>
-            <ul class="text-2xl">
-              <li>-&nbsp;NODE JS</li>
-              <li>-&nbsp;EXPRESS</li>
-              <li>-&nbsp;PHP</li>
-              <li>-&nbsp;LARAVEL</li>
+          <div class="tools-box relative">
+            <!-- <h4 class="text-1xl title-color">Back end</h4> -->
+            <i class="bi bi-code-square text-5xl title-color"></i>
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Node JS</li>
+              <li>Express</li>
+              <li>PHP</li>
+              <li>Laravel</li>
             </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4 class="text-2xl font-bold">Bases de datos</h4>
-            <ul class="text-2xl">
-              <li>-&nbsp;MYSQL</li>
-              <li>-&nbsp;MARIA DB</li>
-              <li>-&nbsp;SQL SERVER</li>
-              <li>-&nbsp;POSTGRE SQL</li>
-              <li>-&nbsp;MONGO DB</li>
-              <li>-&nbsp;REDIS</li>
-              <li>-&nbsp;FIREBASE</li>
+          <div class="tools-box relative">
+            <i class="bi bi-database text-5xl title-color"></i>
+            <!-- <h4 class="text-1xl title-color">Bases de datos</h4> -->
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Mysql</li>
+              <li>Maria DB</li>
+              <li>Sql Server</li>
+              <li>Postgre Sql</li>
+              <li>Mongo DB</li>
+              <li>Redis</li>
+              <li>Firebase</li>
             </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4 class="text-2xl font-bold">Otros</h4>
-            <ul class="text-2xl">
-              <li>-&nbsp;AWS</li>
-              <li>-&nbsp;NPM</li>
-              <li>-&nbsp;EJS</li>
-              <li>-&nbsp;HANDLEBARS</li>
-              <li>-&nbsp;JADE</li>
-              <li>-&nbsp;JQUERY</li>
-              <li>-&nbsp;FIGMA</li>
+          <div class="tools-box relative">
+            <i class="bi bi-diagram-3 text-5xl title-color"></i>
+            <!-- <h4 class="text-1xl title-color">Otros</h4> -->
+            <ul class="text-1xl">
+              <li><br /></li>
+              <li>Aws</li>
+              <li>Npm</li>
+              <li>Ejs</li>
+              <li>Handlebars</li>
+              <li>Jade</li>
+              <li>Jquery</li>
+              <li>Figma</li>
             </ul>
+            <div class="content-cube absolute">
+              <div class="cube-1 select-none" id="cube-1">
+                <div
+                  class="cube-side-1 cube-front-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-back-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-top-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-bottom-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-left-1 text-white text-center flex justify-center items-center"
+                ></div>
+                <div
+                  class="cube-side-1 cube-right-1 text-white text-center flex justify-center items-center"
+                ></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -503,13 +996,6 @@
     </div>
     <!-- end-section-4 -->
 
-    <div class="w-full h-[100vh] absolute z-10">
-      <iframe
-        class="h-full w-full"
-        src="https://jp-portafolio.netlify.app/3d.html"
-        frameborder="0"
-      ></iframe>
-    </div>
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/cube.js"></script>
   </body>

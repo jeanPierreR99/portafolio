@@ -1,5 +1,6 @@
 :root{
     --text-color: rgb(179, 191, 227);
+    --title-color: rgb(219, 223, 236);
     --rose-color: #BE123C; 
   }
   * {
@@ -81,7 +82,10 @@
     -webkit-background-clip: text !important;
     color: transparent !important;
   }
-  .about-text {
+  .title-color{
+    color: var(--title-color);
+  }
+  .text-color {
     color: var(--text-color);
   }
   /* .capa {
@@ -104,6 +108,19 @@
     bottom: -5px;
     left: 0;
   }
+.tools .tools-box{
+  width: 300px;
+  box-shadow:  4px 10px 12px rgba(4, 15, 37, 0.24);
+  padding: 20px;
+  text-align: center;
+margin: 0 auto 0 auto;
+transition: .6s ease-out;overflow: hidden;
+}
+.tools .tools-box:hover{
+background: #021d38;
+box-shadow:  6px 12px 12px rgba(4, 15, 37, 0.621);
+}
+
 
   /* mediaquery */
   @media (max-width: 640px) {
