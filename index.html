@@ -26,11 +26,11 @@
   <body onload="ready()" id="body" onbeforeunload="beforeLoad()">
     <script src="./assets/js/index.js"></script>
     <div
-      class="welcome text-9xl absolute h-screen bg-white w-full"
+      class="bg-white welcome text-9xl absolute h-screen bg-whites w-full"
       style="z-index: 1000000"
     >
       <div
-        class="welcome-text w-6/12 flex absolute flex justify-center top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+        class="welcome-text w-6/12 flex absolute justify-center top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
         style="opacity: 0"
       >
         <h1 class="">HI</h1>
@@ -38,7 +38,7 @@
     </div>
     <!-- section-1 -->
     <div
-      class="section-header h-[100vh] overflow-hidden relative"
+      class="section-header h-[100vh] overflow-hidden relative mb-[200px] sm:mb-[80px]"
       id="section-1"
     >
       <header
@@ -51,32 +51,32 @@
           alt=""
           class="h-26 md:w-48 md:h-34 m-auto md:m-0"
         />
-        <ul class="flex md:gap-6 gap-0 self-center justify-center">
+        <ul class="flex md:gap-6 gap-0 self-center justify-center text-color">
           <li class="">
             <a
               onclick="saltarA()"
-              class="border-gray-100 text-sm ease-in duration-200 p-2 hover:border-b-2 border-dashed focus:text-rose-700 text-gray-400 hover:text-gray-100 cursor-pointer"
+              class="border-gray-100 text-sm ease-in duration-200 p-2 focus:text-rose-700 hover:text-white cursor-pointer"
               >HOME</a
             >
           </li>
           <li class="">
             <a
               onclick="saltarB()"
-              class="border-gray-100 text-sm ease-in duration-200 p-2 hover:border-b-2 border-dashed focus:text-rose-700 text-gray-400 hover:text-gray-100 cursor-pointer"
+              class="border-gray-100 text-sm ease-in duration-200 p-2 focus:text-rose-700 hover:text-white cursor-pointer"
               >SOBRE MI</a
             >
           </li>
           <li class="">
             <a
               onclick="saltarC()"
-              class="border-gray-100 text-sm ease-in duration-200 p-2 hover:border-b-2 border-dashed focus:text-rose-700 text-gray-400 hover:text-gray-100 cursor-pointer"
+              class="border-gray-100 text-sm ease-in duration-200 p-2 focus:text-rose-700 hover:text-white cursor-pointer"
               >EXPERIENCIAS</a
             >
           </li>
           <li class="">
             <a
               onclick="saltarD()"
-              class="border-gray-100 text-sm ease-in duration-200 p-2 hover:border-b-2 border-dashed focus:text-rose-700 text-gray-400 hover:text-gray-100 cursor-pointer"
+              class="border-gray-100 text-sm ease-in duration-200 p-2 focus:text-rose-700 hover:text-white cursor-pointer"
               >PROYECTOS</a
             >
           </li>
@@ -84,14 +84,14 @@
       </header>
       <div class="content-body w-full relative md:h-full md:mt-28 mt-48 z-10">
         <div
-          class="left w-full md:pl-10 md:pt-20 pl-2 pt-2 flex flex-col gap-10 fixed"
+          class="left w-full md:pl-10 md:pt-10 pl-2 pt-2 flex flex-col gap-10 fixed"
           style="z-index: -10"
         >
           <div>
             <h1 class="md:text-9xl text-8xl text-white font-bold name">
               I'M
               <span
-                class="text-rose-700 md:text-[11rem] text-9xl"
+                class="text-rose-700 md:text-[11rem] text-9xl text-j"
                 style="
                   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
                     sans-serif;
@@ -140,7 +140,7 @@
     <!-- end-section-1 -->
 
     <!-- section-2 -->
-    <div class="h-auto pb-[200px] relative z-10 pt-[7%] mt-[-200px]" id="section-2">
+    <div class="h-auto pb-[200px] relative z-10 pt-[7%] sm:pt-0" id="section-2">
       <script src="./assets/js/section-2.js"></script>
     </div>
     <!-- end-section-2 -->
