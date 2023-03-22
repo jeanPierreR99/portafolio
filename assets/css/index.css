@@ -62,7 +62,7 @@ header {
   height: 80px;
   background: #042445;
     clip-path: polygon(0 0%, 100% 80px, 100% 100%, 0 100%) !important;
-  top: -80px;
+  top: -75px;
 }
 #section-3 {
   overflow-x: hidden !important;

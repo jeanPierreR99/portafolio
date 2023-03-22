@@ -9,14 +9,14 @@ $(window).on("scroll", function () {
 function saltarA() {
   var tiempo = 700;
   $("html, body").animate(
-    { scrollTop: $("#section-1").offset().top - 150 },
+    { scrollTop: $("#section-1").offset().top},
     tiempo
   );
 }
 function saltarB() {
   var tiempo = 700;
   $("html, body").animate(
-    { scrollTop: $("#section-2").offset().top - 10 },
+    { scrollTop: $("#section-2").offset().top - 110},
     tiempo
   );
 }
