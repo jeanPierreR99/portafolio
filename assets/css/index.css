@@ -2,6 +2,8 @@
   --text-color: rgb(179, 191, 227);
   --title-color: rgb(219, 223, 236);
   --rose-color: #BE123C; 
+  --blue-color: #05cdff;
+  --ex-op-color: #eb5e73;
 }
 * {
   box-sizing: border-box;
@@ -149,4 +151,14 @@ box-shadow:  6px 12px 12px rgba(4, 15, 37, 0.621);
   clip-path: polygon(0 0%, 100% 30px, 100% 100%, 0 100%);
 
 }
+}
+
+.ex-option::before{
+ content: "";
+ position: absolute;
+ width: 2px;
+ height: 100%;
+ left: 0px;
+ top: 0;
+ background: var(--rose-color);
 }
