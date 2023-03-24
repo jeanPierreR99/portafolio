@@ -163,13 +163,13 @@ box-shadow:  6px 12px 12px rgba(4, 15, 37, 0.621);
 }
 
 .card {
-width: 400px;
+width: 300px;
 cursor: pointer;
 }
 .card-main {
 text-align: center;
 position: relative;
-height: 450px;
+height: 350px;
 transition: transform 2s;
 transform-style: preserve-3d;
 }
