@@ -1,6 +1,6 @@
 $("#section-3").html(`<div class="px-10">
 <h4 class="text-4xl font-bold title-color mb-10 relative about-me">
-  Mi experiencia
+  Mi Experiencia
 </h4>
 <div class="flex flex-col md:flex-row">
   <div class="section-3-left w-full md:w-3/12 text-color text-1xl">
@@ -58,28 +58,82 @@ $("#section-3").html(`<div class="px-10">
 03
 </h1>`);
 
-$(document).ready(()=>{
-  $('.section-3-right').html(experiencia('HOLA MUNDO 1', 'entidad 1', "2/3/2023,", "./assets/public/img/fondo-about.png"));
+$(document).ready(() => {
+  var url = "./assets/public/file-json/data.json";
 
-  $('#ex-1').click(()=>{
-    $('.section-3-right').html(experiencia('HOLA MUNDO 1', 'entidad 1', "1/1/2023", "./assets/public/img/fondo-about.png"));
-  });
-  $('#ex-2').click(()=>{
-    $('.section-3-right').html(experiencia('HOLA MUNDO 2', 'entidad 2', "2/3/2023", "./assets/public/img/page-ejemplo.webp"));
-  });
-  $('#ex-3').click(()=>{
-    $('.section-3-right').html(experiencia('HOLA MUNDO 3', 'entidad 3', "12/3/2023", "./assets/public/img/fondo-about.png"));
-  });
-  $('#ex-4').click(()=>{
-    $('.section-3-right').html(experiencia('HOLA MUNDO 4', 'entidad 4', "22/31/2023", "./assets/public/img/page-ejemplo.webp"));
-  })
-  $('#ex-5').click(()=>{
-    $('.section-3-right').html(experiencia('HOLA MUNDO 5', 'entidad 5', "27/15/2023", "./assets/public/img/fondo-about.png"));
-  });
-  
-})
-function experiencia(titulo, entidad, fecha, image1){
+  fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((response) => {
+      $(".section-3-right").html(
+        experiencia(
+          response[0].title,
+          response[0].entidad,
+          response[0].fecha,
+          response[0].image
+        )
+      );
 
+      $("#ex-1").click(() => {
+        $(".section-3-right").html(
+          experiencia(
+            response[0].title,
+            response[0].entidad,
+            response[0].fecha,
+            response[0].image
+          )
+        );
+      });
+
+      $("#ex-2").click(() => {
+        $(".section-3-right").html(
+          experiencia(
+            response[1].title,
+            response[1].entidad,
+            response[1].fecha,
+            response[1].image
+          )
+        );
+      });
+
+      $("#ex-3").click(() => {
+        $(".section-3-right").html(
+          experiencia(
+            response[2].title,
+            response[2].entidad,
+            response[2].fecha,
+            response[2].image
+          )
+        );
+      });
+
+      $("#ex-4").click(() => {
+        $(".section-3-right").html(
+          experiencia(
+            response[3].title,
+            response[3].entidad,
+            response[3].fecha,
+            response[3].image
+          )
+        );
+      });
+
+      $("#ex-5").click(() => {
+        $(".section-3-right").html(
+          experiencia(
+            response[4].title,
+            response[4].entidad,
+            response[4].fecha,
+            response[4].image
+          )
+        );
+      });
+
+    });
+});
+
+function experiencia(titulo, entidad, fecha, image1) {
   return `
   <h4 class="title-color text-2xl font-bold">
   ${titulo} -
@@ -108,15 +162,15 @@ function experiencia(titulo, entidad, fecha, image1){
   inventore ullam repellat corrupti atque sunt eius. Aperiam
   corporis nostrum minima id, commodi eveniet culpa?
 </p>
-<div class="content-image flex gap-2 mb-4 h-[200px]">
+<div class="content-image flex mb-4 md:h-[350px] h-[250px] md:justify-around justify-between w-full">
   <img
     src="${image1}"
-    class="w-6/12 object-cover"
+    class="w-5/12 object-cover ex-image relative"
     alt=""
   />
   <img
     src="./assets/public/img/page-ejemplo.webp"
-    class="w-6/12 object-cover"
+    class="w-5/12 object-cover ex-image relative"
     alt=""
   />
 </div>
@@ -127,5 +181,5 @@ function experiencia(titulo, entidad, fecha, image1){
   class="text-[var(--text-color)] text-3xl hover:text-[var(--title-color)] bg-rose-800  hover:bg-black ease-in duration-300 rounded-full p-2"
   ><i class="bi bi-link-45deg"></i
 ></a>
-  `
+  `;
 }

@@ -1,7 +1,7 @@
 $("#section-2").html(`<div class="sm:flex-row flex-col flex h-[100%]">
 <div class="section-2-left h-full w-full sm:w-7/12 px-10 sm:0 mb-10">
   <h4 class="text-4xl font-bold title-color mb-10 relative about-me">
-    Sobre mi
+    Sobre Mi
   </h4>
   <div>
     <div class="text-color">

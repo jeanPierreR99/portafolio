@@ -36,6 +36,7 @@ function saltarD() {
 }
 
 $(document).ready(() => {
+
   TweenMax.to(".welcome-text", 1.5, {
     delay: 0.3,
     opacity: "1",
