@@ -185,7 +185,7 @@ left: 0;
 right: 0;
 backface-visibility: hidden;
 transform-style: preserve-3d;
-box-shadow: 10px 10px 15px rgba(2, 12, 32, 0.674);
+box-shadow:  6px 12px 12px rgba(4, 15, 37, 0.621);
 user-select: none;
 }
 .card-front::before {
@@ -197,7 +197,7 @@ left: 0Px;
 right: 0Px;
 /* border: 3px solid rgb(255, 255, 255); */
 transform: translateZ(3rem);
-background: rgba(216, 0, 47, 0.943);
+background: #021d38;
 }
 .card-title {
 transform: translateZ(6rem);
